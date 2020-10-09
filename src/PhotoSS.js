@@ -24,13 +24,25 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
           <div>
-            <img />
+            <div className="slide-photo">
+                <span className='helper'></span>
+                <img src="glitterShatter.jpg" />
+                <p>This photo is of consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
           </div>
           <div>
-            <img />
+            <div className="slide-photo">
+                <span className='helper'></span>
+                <img src="glitterShatter.jpg" />
+                <p>This photo is of consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
           </div>
           <div>
-            <img />
+            <div className="slide-photo">
+                <span className='helper'></span>
+                <img src="glitterShatter.jpg" />
+                <p>This photo is of consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>          
           </div>
         </Slider>
       </div>
