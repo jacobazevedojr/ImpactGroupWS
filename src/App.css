@@ -1,38 +1,128 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    overflow-y: scroll;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    padding: 3vh 5vw 3vh 5vw;
+    background-color: white;
+    min-height: 1vh;
 }
 
-.App-link {
-  color: #61dafb;
+#CSU {
+    color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.Header {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    color: black;
+    font-size: calc(4vmin);
+}
+
+.HeaderLogo {
+    align-items: flex-start;
+}
+
+#TIGLogo {
+    text-align: left;
+    text-decoration: overline;
+    color: dimgray;
+    line-height: 8vmin;
+    font-weight: bolder;
+}
+
+.WPLinks {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 3vmin;
+    color: dimgray;
+    flex: 1 1 auto;
+}
+
+.topLinks {
+    flex-grow: 1;
+}
+
+.bottomLinks {}
+
+#NavLink {
+    color: black;
+}
+
+.App-mainbody1 {
+    padding-top: 4vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.row {
+    padding: 3vh 8vw 5vh 8vw;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    align-items: center;
+}
+
+.desc {
+    flex-basis: 35vw;
+    line-height: 5vh;
+    text-indent: 4vmin;
+}
+
+.pic {
+    flex-basis: 65vw;
+    text-align: center;
+}
+
+
+
+.headerTitle {
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+}
+
+.App-mainSS {
+    padding: 0 5vw 0 5vw;
+    background-color: #dadada;
+    height: 480px;
+}
+
+.slick-slide .slide-photo {
+    height: 480px;      /* Equals maximum image height */
+    white-space: nowrap; /* This is required unless you put the helper span closely near the img */
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.slick-slide img {
+    vertical-align: middle;
+    max-height: 480px;
+    display: inline;
+    z-index: -1;
+    background-image: linear-gradient(to left, black , transparent);
+}
+
+.slick-slide p {
+    position:absolute;
+    top: 10px;
+    right: 10px;
 }
