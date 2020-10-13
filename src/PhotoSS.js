@@ -9,7 +9,7 @@ export default class SimpleSlider extends Component {
       dots: true,
       fade: true,
       infinite: true,
-      speed: 500,
+      speed: 1000,
       slidesToShow: 1,
       slidesToScroll: 1
     };
@@ -26,8 +26,8 @@ export default class SimpleSlider extends Component {
           <div>
             <div className="slide-photo">
                 <span className='helper'></span>
-                <img src="glitterShatter.jpg" />
-                <p>This photo is of consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <img src="shardSmash.jpg" />
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. This photo is of consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
           </div>
           <div>
