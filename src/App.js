@@ -3,7 +3,6 @@ import './App.css';
 import Header from './Header.js'
 import MainBody1 from './MainBody1.js'
 import PhotoSS from './PhotoSS.js'
-import TestPeople from './TestPeople.js'
 
 function App() {
   return (
@@ -16,9 +15,6 @@ function App() {
       </div>
       <div className="App-mainbody1">
         <MainBody1 />
-      </div>
-      <div className='App-testpeople'>
-        <TestPeople />
       </div>
     </div>
   );
