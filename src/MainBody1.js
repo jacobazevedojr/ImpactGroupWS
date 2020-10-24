@@ -4,7 +4,7 @@ import React from 'react'
 
 function MainBody1() {
   return (
-    <div>
+    <div className="App-mainbody1">
       <div className="TIGDesc">
         <div className="row">
             <div className="desc">

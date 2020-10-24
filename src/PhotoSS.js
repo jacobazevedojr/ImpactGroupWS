@@ -14,7 +14,7 @@ export default class SimpleSlider extends Component {
       slidesToScroll: 1
     };
     return (
-      <div>
+      <div className="App-mainSS">
         <Slider {...settings}>
           <div>
             <div className="slide-photo">

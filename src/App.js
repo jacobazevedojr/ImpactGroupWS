@@ -1,20 +1,24 @@
 import React from 'react';
 import './App.css';
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Switch,
+} from "react-router-dom"
 import Header from './Header.js'
-import MainBody1 from './MainBody1.js'
-import PhotoSS from './PhotoSS.js'
+import Home from './home.js'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Header />
+        <Router>
+            <Header />
+        </Router>
       </header>
-      <div className="App-mainSS">
-        <PhotoSS />
-      </div>
-      <div className="App-mainbody1">
-        <MainBody1 />
+      <div>
+        
       </div>
     </div>
   );
