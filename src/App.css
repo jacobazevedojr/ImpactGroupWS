@@ -125,3 +125,35 @@ h3 {
     top: 10px;
     right: 10px;
 }
+
+.App-testpeople {
+    padding: 4vh;
+    background-color: #FFF;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.DW {
+    padding: 4vh 8vw 4vh 8vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.abouttext {
+    flex: 65%;
+    order: 1;
+    text-align: center;
+    color: black;
+}
+
+.mainphoto {
+    flex: 35%;
+    order: 2;
+    text-align: center;
+}
+
+.abouttext, .mainphoto {
+    flex-basis: 100%;
+    border: 1px #000 solid;
+}

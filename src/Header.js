@@ -1,18 +1,6 @@
 // src/Header.js
 
 import React from 'react'
-import {
-    BrowserRouter as Router,
-    Route,
-    Link,
-    Switch
-} from "react-router-dom"
-import Home from './home'
-import About from './aboutTIG'
-import People from './people'
-import Research from './research'
-import News from './news'
-
 
 function Header() {
   return (
@@ -27,21 +15,10 @@ function Header() {
       
       <div className="WPLinks">
         <div className="topLinks">
-            <Link to ='/visit' id="NavLink">VISIT</Link> | <Link to='/contact' id="NavLink">CONTACT</Link>
+            <a id="NavLink">VISIT</a> | <a id="NavLink">CONTACT</a>
         </div>
         <div className="bottomLinks">
-            <Router>
-                <Switch>
-                    <nav>
-                        <Link to='/aboutTIG' id="NavLink">ABOUT TIG</Link> | <Link to='/people' id="NavLink">PEOPLE</Link> | <Link to='/research' id="NavLink">RESEARCH</Link> | <Link to='/news' id="NavLink">NEWS</Link>
-                    </nav>
-                    <Route path='/' component={Home} />
-                    <Route path='/aboutTIG' component={About} />
-                    <Route path='/people' component={People} />
-                    <Route path='/research' component={Research} />
-                    <Route path='/news' component={News} />                    
-                </Switch>
-            </Router>
+            <a id="NavLink">ABOUT TIG</a> | <a id="NavLink">PEOPLE</a> | <a id="NavLink">RESEARCH</a> | <a id="NavLink">NEWS</a>
         </div>
       </div>
     </div>
