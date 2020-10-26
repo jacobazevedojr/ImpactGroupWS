@@ -5,18 +5,15 @@
     overflow-y: scroll;
 }
 
-.App-header {
-    padding: 3vh 5vw 3vh 5vw;
-    background-color: white;
-    min-height: 1vh;
-}
-
 #CSU {
     color: black;
 }
 
 
 .Header {
+    padding: 3vh 5vw 3vh 5vw;
+    background-color: white;
+    min-height: 1vh;
     display: flex;
     flex-direction: row;
     flex: 1 1 auto;
@@ -24,8 +21,37 @@
     font-size: calc(4vmin);
 }
 
+#CSULB strong {
+    color: #F9A600;
+}
+
+.Footer {
+    padding: 3vh 5vw 3vh 5vw;
+    background-color: #dadada;
+    min-height: 1vh;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    color: black;
+    font-size: calc(4vmin);
+    position: relative;
+}
+
 .HeaderLogo {
     align-items: flex-start;
+}
+
+.FooterLogo {
+    align-items: flex-start;
+}
+
+.FooterLogo strong {
+    color: #F9A600;
+}
+
+.FooterLogo span {
+    color: dimgray;
+    font-weight: bolder;
 }
 
 #TIGLogo {
@@ -43,6 +69,16 @@
     font-size: 3vmin;
     color: dimgray;
     flex: 1 1 auto;
+}
+
+.FooterLinks {
+    text-align: right;
+    font-size: 3vmin;
+    color: dimgray;
+    flex: 1 1 auto;
+    position: absolute;
+    bottom: 3vh;
+    right: 5vw;
 }
 
 .topLinks {
@@ -81,8 +117,6 @@
     flex-basis: 65vw;
     text-align: center;
 }
-
-
 
 .headerTitle {
     text-align: center;

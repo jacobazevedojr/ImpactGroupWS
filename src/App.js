@@ -1,23 +1,26 @@
 import React from 'react';
 import './App.css';
-import Header from './Header.js'
-import MainBody1 from './MainBody1.js'
-import PhotoSS from './PhotoSS.js'
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Switch
+} from "react-router-dom"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Header />
-      </header>
-      <div className="App-mainSS">
-        <PhotoSS />
-      </div>
-      <div className="App-mainbody1">
-        <MainBody1 />
-      </div>
-    </div>
-  );
+import Header from './Header'
+import Home from './home'
+import Footer from './Footer'
+
+class App extends React.Component { 
+    render() {
+        return (
+            <div className="App">
+                <Header />
+                {this.props.children || <Home />}
+                <Footer />
+            </div> 
+        )
+    }
 }
 
 export default App;

@@ -1,6 +1,21 @@
 // src/Header.js
 
 import React from 'react'
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Switch
+} from "react-router-dom"
+import Home from './home'
+import About from './aboutTIG'
+import People from './people'
+import Research from './research'
+import News from './news'
+import Contact from './contact'
+import Visit from './visit'
+
+
 
 function Header() {
   return (
@@ -12,15 +27,19 @@ function Header() {
         </div>
         <div id="TIGLogo">THE IMPACT GROUP</div>
       </div>
-      
+    <Router>
+        <Switch>
       <div className="WPLinks">
-        <div className="topLinks">
-            <a id="NavLink">VISIT</a> | <a id="NavLink">CONTACT</a>
-        </div>
-        <div className="bottomLinks">
-            <a id="NavLink">ABOUT TIG</a> | <a id="NavLink">PEOPLE</a> | <a id="NavLink">RESEARCH</a> | <a id="NavLink">NEWS</a>
-        </div>
-      </div>
+
+                <div className="topLinks">
+                    <Link to ='/visit' id="NavLink">VISIT</Link> | <Link to='/contact' id="NavLink">CONTACT</Link>
+                </div>
+                <div className="bottomLinks">
+                    <Link to='/aboutTIG' id="NavLink">ABOUT TIG</Link> | <Link to='/people' id="NavLink">PEOPLE</Link> | <Link to='/research' id="NavLink">RESEARCH</Link> | <Link to='/news' id="NavLink">NEWS</Link>
+                </div>
+            </div>
+            </Switch>
+        </Router>
     </div>
   )
 }
