@@ -8,13 +8,12 @@ import {
     Switch
 } from "react-router-dom"
 
-
-
+import StyledLink from './linkStyles'
 
 function Header() {
   return (
     <div className="Header">
-        <Link to='/'>
+        <StyledLink to='/'>
         <span className="LogoLink" style={{"display": "block"}}>
           <div className="HeaderLogo">
             <div id="CSULB">
@@ -24,13 +23,13 @@ function Header() {
             <div id="TIGLogo">THE IMPACT GROUP</div>
           </div>
         </span>
-        </Link>
+        </StyledLink>
       <div className="WPLinks">
                 <div className="topLinks">
-                    <Link to ='/visit' id="NavLink">VISIT</Link> | <Link to='/contact' id="NavLink">CONTACT</Link>
+                    <StyledLink to ='/visit' id="NavLink">VISIT</StyledLink> | <StyledLink to='/contact' id="NavLink">CONTACT</StyledLink>
                 </div>
                 <div className="bottomLinks">
-                    <Link to='/aboutTIG' id="NavLink">ABOUT TIG</Link> | <Link to='/people' id="NavLink">PEOPLE</Link> | <Link to='/research' id="NavLink">RESEARCH</Link> | <Link to='/news' id="NavLink">NEWS</Link>
+                    <StyledLink to='/aboutTIG' id="NavLink">ABOUT TIG</StyledLink> | <StyledLink to='/people' id="NavLink">PEOPLE</StyledLink> | <StyledLink to='/research' id="NavLink">RESEARCH</StyledLink> | <StyledLink to='/news' id="NavLink">NEWS</StyledLink>
                 </div>
             </div>
     </div>

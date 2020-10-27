@@ -9,6 +9,12 @@
     color: black;
 }
 
+.Link {
+    &:hover {
+        color: #F9A600;
+    }
+}
+
 
 .Header {
     padding: 3vh 5vw 3vh 5vw;

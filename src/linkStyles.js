@@ -1,11 +1,14 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
-export default styled(Link)'
-  text-decoration: none;
 
-  &:hover {
-    text-decoration: underline;
-  }
-';
+const StyledLink = styled(Link)`
+    text-decoration: none;
 
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
+`;
+
+export default (props) => <StyledLink {...props} />;

@@ -8,20 +8,20 @@ import {
     Switch
 } from "react-router-dom"
 
-
+import StyledLink from './linkStyles'
 
 function Footer() {
   return (
     <div className="Footer">
-        <Link to='/'>
+        <StyledLink to='/'>
         <span className="LogoLink" style={{"display": "block"}}>
           <div className="FooterLogo">
                 CSU<strong>LB</strong> | <span>TIG</span>
           </div>
         </span>
-        </Link>
+        </StyledLink>
       <div className="FooterLinks">
-                    <Link to ='/visit' id="NavLink">VISIT</Link> | <Link to='/contact' id="NavLink">CONTACT</Link>
+                    <StyledLink to ='/visit' id="NavLink">VISIT</StyledLink> | <StyledLink to='/contact' id="NavLink">CONTACT</StyledLink>
             </div>
     </div>
   )
