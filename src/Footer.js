@@ -20,9 +20,9 @@ function Footer() {
           </div>
         </span>
         </StyledLink>
-      <div className="FooterLinks">
-                    <StyledLink to ='/visit' id="NavLink">VISIT</StyledLink> | <StyledLink to='/contact' id="NavLink">CONTACT</StyledLink>
-            </div>
+        <div className="FooterLinks">
+            <StyledLink to ='/visit' id="NavLink">VISIT</StyledLink> | <StyledLink to='/contact' id="NavLink">CONTACT</StyledLink>
+        </div>
     </div>
   )
 }

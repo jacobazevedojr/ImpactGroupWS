@@ -1,6 +1,16 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+/*
+Pallette
+black
+white
+soft black: #333333
+dimgrey
+CSULB Orange: #F9A600
+light grey: #dadada
+*/
+
 .App {
     overflow-y: scroll;
 }
@@ -97,12 +107,58 @@
     color: black;
 }
 
-.App-mainbody1 {
+.App-mainbody1 .container {
     padding-top: 4vh;
-    color: black;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    color: #333333;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: white;
+}
+
+.App-mainbody2 .container {
+    padding-top: 20vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    color: #333333;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+}
+
+.App-projects {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.App-projects .container {
+    padding: 0;
+    margin: 5% auto;
+}
+
+.App-projects .container .picRow {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    color: #333333;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.App-projects .container p {
+    text-align: center;
+    font-size: 4vh;
+}
+
+.App-projects .container img {
+    max-width: 100%;
+    height:auto/3;
+    width: auto/3;
+}
+
+.App-projects .container .pic {
+    padding-right: .5vw;
 }
 
 .row {
@@ -135,43 +191,60 @@ h3 {
 
 .App-mainSS {
     padding: 0 5vw 0 5vw;
-    background-color: #dadada;
-    height: 480px;
-    background: linear-gradient(to left, dimgrey, transparent, dimgrey 100%);
+    background: #dadada;
+}
+
+.slick-slider {
+    background: white
 }
 
 .slick-slide .slide-photo {
     height: 480px;      /* Equals maximum image height */
 
     text-align: center;
-    vertical-align: middle;
 }
 
-.helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+.slick-slide .gradOverlayRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 500px;
+    background-image: -ms-linear-gradient(left, transparent 0%, #dadada 50%, #dadada 100%);
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(left, transparent 0%, #dadada 100%);
+    /* Opera */ 
+    background-image: -o-linear-gradient(left, transparent 0%, #dadada 100%);
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(.1, white), color-stop(1, white));
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(left, transparent 0%, #dadada 100%);
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: linear-gradient(to right, transparent 0%, #dadada 100%);
+}
+
+.slick-slide .gradOverlayLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 500px;
+    background: linear-gradient(to left, transparent, transparent, #dadada)
 }
 
 .slick-slide img {
-    vertical-align: middle;
-    max-height: 480px;
-    display: inline;
-    z-index: -1;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto auto;
 }
 
-.slick-slide p {
+.info p {
     position:absolute;
     top: 10px;
     right: 10px;
-}
-
-.App-testpeople {
-    padding: 4vh;
-    background-color: #FFF;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
 }
 
 .DW {
@@ -184,7 +257,7 @@ h3 {
     flex: 65%;
     order: 1;
     text-align: center;
-    color: black;
+    color: #333333;
 }
 
 .mainphoto {
@@ -193,7 +266,54 @@ h3 {
     text-align: center;
 }
 
+.info .desc {
+    position: absolute;
+    left: 50vw;
+    top: 14vh;
+    font-size: 3.5vh;
+}
+
+.info .head {
+    position: absolute;
+    left: 65vw;
+    font-size: 6vh;
+    color: #333333;
+}
+
 .abouttext, .mainphoto {
     flex-basis: 100%;
     border: 1px #000 solid;
+}
+
+a:-webkit-any-link {
+    color: black;
+}
+
+#NavLink:hover {
+    color: #F9A600;
+}
+
+
+
+.About {
+    text-align: center
+}
+.People {
+    text-align: center
+}
+.Research {
+    text-align: center
+}
+.News {
+    text-align: center
+}
+.Contact {
+    text-align: center
+}
+.Visit {
+    text-align: center
+}
+.People {
+    text-align: center
+
 }
