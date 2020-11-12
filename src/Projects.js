@@ -2,52 +2,41 @@
 
 import React from 'react'
 
-import pic1 from "./Puffin.jpg"
-import pic2 from "./Puffin.jpg"
-import pic3 from "./Puffin.jpg"
-import pic4 from "./Puffin.jpg"
-import pic5 from "./Puffin.jpg"
-import pic6 from "./Puffin.jpg"
-import pic7 from "./Puffin.jpg"
-import pic8 from "./Puffin.jpg"
-import pic9 from "./Puffin.jpg"
-
-
 function Projects() {
   return (
     <div className='container'>
       <p>WHAT WE DO</p>
       <div className='picRow'>
         <div className="pic">
-            <img src={pic1} />
+            <img src={process.env.PUBLIC_URL + "/Puffin.jpg"} />
         </div>
         <div className="pic">
-            <img src={pic2} />
+            <img src={process.env.PUBLIC_URL + "/Puffin.jpg"} />
         </div>
         <div className="pic">
-            <img src={pic3} />
-        </div>
-      </div>
-      <div className='picRow'>
-        <div className="pic">
-            <img src={pic4} />
-        </div>
-        <div className="pic">
-            <img src={pic5} />
-        </div>
-        <div className="pic">
-            <img src={pic6} />
+            <img src={process.env.PUBLIC_URL + "/Puffin.jpg"} />
         </div>
       </div>
       <div className='picRow'>
         <div className="pic">
-            <img src={pic7} />
+            <img src={process.env.PUBLIC_URL + "/Puffin.jpg"} />
         </div>
         <div className="pic">
-            <img src={pic8} />
+            <img src={process.env.PUBLIC_URL + "/Puffin.jpg"} />
         </div>
         <div className="pic">
-            <img src={pic9} />
+            <img src={process.env.PUBLIC_URL + "/Puffin.jpg"} />
+        </div>
+      </div>
+      <div className='picRow'>
+        <div className="pic">
+            <img src={process.env.PUBLIC_URL + "/Puffin.jpg"} />
+        </div>
+        <div className="pic">
+            <img src={process.env.PUBLIC_URL + "/Puffin.jpg"} />
+        </div>
+        <div className="pic">
+            <img src={process.env.PUBLIC_URL + "/Puffin.jpg"} />
         </div>
       </div>
     </div>

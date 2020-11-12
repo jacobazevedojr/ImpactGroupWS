@@ -3,8 +3,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 
-import pic1 from "./glitterShatter.jpg"
-import pic2 from "./shardSmash.jpg"
 
 export default class SimpleSlider extends Component {
   render() {
@@ -22,7 +20,7 @@ export default class SimpleSlider extends Component {
         <Slider {...settings}>
           <div>
             <div className="slide-photo">
-                <img src={pic1} />
+                <img src={process.env.PUBLIC_URL + "/glitterShatter.jpg"} />
             </div>
             <div className="gradOverlayRight"></div>
             <div className="gradOverlayLeft"></div>
@@ -34,7 +32,7 @@ export default class SimpleSlider extends Component {
           </div>
           <div>
             <div className="slide-photo">
-                <img src={pic2} />
+                <img src={process.env.PUBLIC_URL + "/shardSmash.jpg"} />
             </div>
             <div className="gradOverlayRight"></div>
             <div className="gradOverlayLeft"></div>
@@ -46,7 +44,7 @@ export default class SimpleSlider extends Component {
           </div>
           <div>
             <div className="slide-photo">
-                <img src={pic1} />
+                <img src={process.env.PUBLIC_URL + "/glitterShatter.jpg"} />
             </div>
             <div className="gradOverlayRight"></div>
             <div className="gradOverlayLeft"></div>
@@ -59,7 +57,7 @@ export default class SimpleSlider extends Component {
           <div>
             <div className="slide-photo">
                 <span className='helper'></span>
-                <img src={pic1} />
+                <img src={process.env.PUBLIC_URL + "/glitterShatter.jpg"} />
             </div>  
             <div className="gradOverlayRight"></div>
             <div className="gradOverlayLeft"></div>
